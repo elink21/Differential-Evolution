@@ -1,0 +1,45 @@
+#diff {
+  display: grid;
+  max-width: 100vw;
+  min-height: 300px;
+  padding: 20px;
+  gap:30px;
+  justify-items: center;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 4fr;
+  grid-template-areas:
+    "inputs inputs"
+    "minSection maxSection";
+
+  #inputs {
+    grid-area: inputs;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+    gap:10px;
+    padding:10px;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+
+    #playButton{
+        grid-column-start: 5;
+        justify-self: center;
+    }
+  }
+
+  .historialBox{
+      text-align: center;
+  }
+
+
+  #minimize {
+    grid-area: minSection;
+    width: 100%;
+  }
+  #maximize {
+    grid-area: maxSection;
+    width: 100%;
+  }
+}
