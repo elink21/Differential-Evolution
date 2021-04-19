@@ -5,6 +5,7 @@ import HistorialBox from './Components/HistorialBox'
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/core/styles';
 import pink from '@material-ui/core/colors/pink';
+import Differential from './Classes/differential';
 
 const theme = createMuiTheme({
   palette: {
